@@ -8,12 +8,12 @@ const { useSearch } = searchHooks;
 
 const RuleList = () => {
   const chaptersRules = useChaptersRules();
-  const { filteredArray, onChange } = useSearch(chaptersRules);
+  const { filter, filteredArray, onChange } = useSearch(chaptersRules);
 
   return (
     <div>
       <div>
-        <TextField variant="outlined" onChange={onChange} />
+        <TextField value={filter} variant="outlined" onChange={onChange} />
       </div>
       {filteredArray
         ? filteredArray.map((r) => (
