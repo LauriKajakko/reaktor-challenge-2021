@@ -13,7 +13,7 @@ const useTableOfContents = () => {
         ruleParser
           .tableOfContentsToArray(res)
           .map((rule) => ({
-            href: `/rules/${rule.substring(0, 3)}`,
+            href: rule.match(/\d{3}/) ? `/rules/${rule.substring(0, 3)}` : undefined,
             title: rule,
           })),
       );

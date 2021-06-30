@@ -1,36 +1,23 @@
 import React from 'react';
 import {
-  TextField, CircularProgress, makeStyles,
+  CircularProgress,
 } from '@material-ui/core';
 import Rule from './Rule';
+import SearchBar from './SearchBar';
 import rulesHooks from '../../hooks/rules';
 import searchHooks from '../../hooks/search';
 
 const { useChaptersRules } = rulesHooks;
 const { useSearch } = searchHooks;
 
-const useStyles = makeStyles(() => ({
-  listItem: {},
-}));
-
 const RuleList = () => {
-  const classes = useStyles();
   const chaptersRules = useChaptersRules();
   const { filter, filteredArray, onChange } = useSearch(chaptersRules);
   return (
     <div>
-      <div>
-        <TextField value={filter} variant="outlined" onChange={onChange} />
-      </div>
+      <SearchBar filter={filter} onChange={onChange} />
       {filteredArray
-        ? filteredArray.map((rule) => (
-          <div
-            key={rule}
-            className={classes.listItem}
-          >
-            <Rule rule={rule} />
-          </div>
-        ))
+        ? filteredArray.map((rule) => <Rule key={rule} rule={rule} />)
         : <CircularProgress />}
     </div>
   );

@@ -6,7 +6,7 @@ const chapterToArray = (text, chapter) => {
 
 const tableOfContentsToArray = (text) => {
   const contentsOneLine = text.match(/(?<=Contents).+?(?=Glossary)/gs)[0];
-  const contentsArray = contentsOneLine.match(/(\d{3}\..*)/g);
+  const contentsArray = contentsOneLine.match(/(\d{1,3}\..*)/g);
   return contentsArray;
 };
 export default { chapterToArray, tableOfContentsToArray };

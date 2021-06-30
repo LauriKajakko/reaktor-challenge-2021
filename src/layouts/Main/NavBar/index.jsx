@@ -5,6 +5,7 @@ import {
   Drawer,
   List,
   makeStyles,
+  Typography,
 } from '@material-ui/core';
 import NavItem from './NavItem';
 import rulesHooks from '../../../hooks/rules';
@@ -40,11 +41,15 @@ const NavBar = () => {
             ? (
               <List>
                 {tableOfContents.map((rule) => (
-                  <NavItem
-                    href={rule.href}
-                    key={rule.title}
-                    title={rule.title}
-                  />
+                  rule.href
+                    ? (
+                      <NavItem
+                        href={rule.href}
+                        key={rule.title}
+                        title={rule.title}
+                      />
+                    )
+                    : <Typography key={rule.title} variant="h6">{rule.title}</Typography>
                 ))}
               </List>
             )

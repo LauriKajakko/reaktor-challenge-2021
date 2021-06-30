@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  makeStyles,
+  makeStyles, Typography,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ const Rule = ({ rule }) => {
   const classes = useStyles();
   const newRule = splitRule(rule);
   return (
-    <div className={classes.listItem}>
+    <Typography className={classes.listItem}>
       {newRule.map((part) => (part.match(linkRegExp)
         ? (
           <Link
@@ -31,7 +31,7 @@ const Rule = ({ rule }) => {
           </Link>
         )
         : part))}
-    </div>
+    </Typography>
   );
 };
 

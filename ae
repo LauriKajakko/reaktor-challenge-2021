@@ -1,0 +1,35 @@
+[33mcommit e4774163d570a543389029b1c4ee5b5f0536f974[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Wed Jun 30 20:09:15 2021 +0300
+
+    links in 'see rule' parts
+
+[33mcommit 8e3bb53109687e24a4481cd0598c9e4329fc8952[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Wed Jun 30 14:39:52 2021 +0300
+
+    Search applied when switching between chapters
+
+[33mcommit bd35bddbaa72165398af768039f80f62f1fea891[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Wed Jun 30 14:13:44 2021 +0300
+
+    search hook and search
+
+[33mcommit b5fe2cb3d5166ca234742f31c86ef9ebe5698240[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Wed Jun 30 13:12:25 2021 +0300
+
+    hooks for conditional fetching and processing data
+
+[33mcommit 722b9457fde8fb14d596e3437bc033e212f215eb[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Tue Jun 29 19:56:27 2021 +0300
+
+    Table of contents, service for fetching file, utils for parsing data, layout, router
+
+[33mcommit 425b3f0b6abae68a2a6bba2f29d21a742b06b761[m
+Author: LauriKajakko <kajakko.lauri@gmail.com>
+Date:   Sun Jun 27 20:43:05 2021 +0300
+
+    Initialize project using Create React App
