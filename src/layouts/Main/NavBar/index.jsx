@@ -22,29 +22,6 @@ const useStyles = makeStyles(() => ({
 const NavBar = () => {
   const classes = useStyles();
   const tableOfContents = useTableOfContents();
-  const content = (
-    <Box
-      height="100%"
-      display="flex"
-      flexDirection="column"
-    >
-      <Box p={2}>
-        { tableOfContents
-          ? (
-            <List>
-              {tableOfContents.map((rule) => (
-                <NavItem
-                  href={rule.href}
-                  key={rule.title}
-                  title={rule.title}
-                />
-              ))}
-            </List>
-          )
-          : <CircularProgress />}
-      </Box>
-    </Box>
-  );
 
   return (
     <Drawer
@@ -53,7 +30,27 @@ const NavBar = () => {
       open
       variant="persistent"
     >
-      {content}
+      <Box
+        height="100%"
+        display="flex"
+        flexDirection="column"
+      >
+        <Box p={2}>
+          { tableOfContents
+            ? (
+              <List>
+                {tableOfContents.map((rule) => (
+                  <NavItem
+                    href={rule.href}
+                    key={rule.title}
+                    title={rule.title}
+                  />
+                ))}
+              </List>
+            )
+            : <CircularProgress />}
+        </Box>
+      </Box>
     </Drawer>
   );
 };
