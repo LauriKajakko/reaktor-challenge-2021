@@ -27,8 +27,8 @@ const useTableOfContents = () => {
 const useChaptersRules = () => {
   const location = useLocation();
   const { chapter } = useParams();
-  const [rules, setRules] = useState(null);
-  const [chaptersRules, setChaptersRules] = useState(null);
+  const [rules, setRules] = useState('');
+  const [chaptersRules, setChaptersRules] = useState([]);
 
   const getRules = async () => {
     const arr = rules || await ruleService.getRules();

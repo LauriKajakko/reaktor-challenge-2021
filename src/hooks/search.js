@@ -5,13 +5,20 @@ const useSearch = (chaptersRules) => {
   const [filteredArray, setFilteredArray] = useState([]);
 
   useEffect(() => {
-    setFilteredArray(chaptersRules.filter((item) => item.includes(filter)));
+    const newArray = chaptersRules
+      .filter((item) => item?.toLowerCase()
+        .includes(filter.toLowerCase()));
+    setFilteredArray(newArray);
   }, [chaptersRules]);
 
   const onChange = (event) => {
     const { value } = event.target;
     setFilter(value);
-    setFilteredArray(chaptersRules.filter((item) => item.includes(value)));
+
+    const newArray = chaptersRules
+      .filter((item) => item?.toLowerCase()
+        .includes(value.toLowerCase()));
+    setFilteredArray(newArray);
   };
 
   return {
