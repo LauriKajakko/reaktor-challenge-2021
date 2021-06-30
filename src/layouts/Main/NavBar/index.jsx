@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Box,
   CircularProgress,
@@ -6,9 +6,10 @@ import {
   List,
   makeStyles,
 } from '@material-ui/core';
-import ruleService from '../../../services/rules';
-import ruleParser from '../../../utils/ruleParser';
 import NavItem from './NavItem';
+import rulesHooks from '../../../hooks/rules';
+
+const { useTableOfContents } = rulesHooks;
 
 const useStyles = makeStyles(() => ({
   desktopDrawer: {
@@ -20,24 +21,7 @@ const useStyles = makeStyles(() => ({
 
 const NavBar = () => {
   const classes = useStyles();
-
-  const [rules, setRules] = useState(null);
-
-  useEffect(() => {
-    const fetchRules = async () => {
-      const res = await ruleService.getRules();
-      setRules(
-        ruleParser
-          .tableOfContentsToArray(res)
-          .map((rule) => ({
-            href: `/${rule}`,
-            title: rule,
-          })),
-      );
-    };
-    fetchRules();
-  }, []);
-
+  const tableOfContents = useTableOfContents();
   const content = (
     <Box
       height="100%"
@@ -45,10 +29,10 @@ const NavBar = () => {
       flexDirection="column"
     >
       <Box p={2}>
-        { rules
+        { tableOfContents
           ? (
             <List>
-              {rules.map((rule) => (
+              {tableOfContents.map((rule) => (
                 <NavItem
                   href={rule.href}
                   key={rule.title}

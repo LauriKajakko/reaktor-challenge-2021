@@ -8,9 +8,9 @@ const routes = [
     path: '/',
     element: <Main />,
     children: [
-      { path: 'rules', element: <Rules /> },
+      { path: 'rules/:chapter', element: <Rules /> },
+      { path: 'rules', element: <Navigate to="/rules/100" /> },
       { path: '/', element: <Navigate to="/rules" /> },
-      { path: '*', element: <Navigate to="/rules" /> },
     ],
   },
 ];
