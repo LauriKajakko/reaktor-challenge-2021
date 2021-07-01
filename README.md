@@ -14,9 +14,9 @@ __Note!__ The app is deployed through a node.js/express server in a free dyno He
 
 ### Project structure
 
-[pics]
+Layout and View folder's components are either purely [presentational](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) or the logic and state is separated in hooks. Service fetches data, hooks process and store it in memory and utils help with that.
 
-
+![Stucture](https://github.com/LauriKajakko/reaktor-challenge-2021/blob/main/Structure.svg)
 
 
 
