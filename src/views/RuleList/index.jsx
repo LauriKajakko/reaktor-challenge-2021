@@ -5,12 +5,9 @@ import {
 import { useParams } from 'react-router-dom';
 import Rule from './Rule';
 import SearchBar from './SearchBar';
-import rulesHooks from '../../hooks/rules';
-import searchHooks from '../../hooks/search';
+import { useChaptersRules } from '../../hooks/rules';
+import useSearch from '../../hooks/search';
 import Page from '../../components/Page';
-
-const { useChaptersRules } = rulesHooks;
-const { useSearch } = searchHooks;
 
 const RuleList = () => {
   const { chapter } = useParams();

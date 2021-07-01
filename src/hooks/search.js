@@ -28,4 +28,4 @@ const useSearch = (chaptersRules) => {
   };
 };
 
-export default { useSearch };
+export default useSearch;

@@ -8,9 +8,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import NavItem from './NavItem';
-import rulesHooks from '../../../hooks/rules';
-
-const { useTableOfContents } = rulesHooks;
+import { useTableOfContents } from '../../../hooks/rules';
 
 const useStyles = makeStyles(() => ({
   desktopDrawer: {

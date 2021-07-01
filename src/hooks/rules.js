@@ -43,4 +43,4 @@ const useChaptersRules = () => {
   return chaptersRules;
 };
 
-export default { useChaptersRules, useTableOfContents };
+export { useChaptersRules, useTableOfContents };
