@@ -23,9 +23,15 @@ Layout and View folder's components are either purely [presentational](https://m
 
 After cloning the repository to run:
 
-### `npm start`
+`
+$ npm install
+`
+
+`
+$ npm start
+`
 
 to build:
 
-### `npm run build`
+`$ npm run build`
 
