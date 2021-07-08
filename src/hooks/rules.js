@@ -12,9 +12,9 @@ const useTableOfContents = () => {
       setTableOfContents(
         ruleParser
           .tableOfContentsToArray(res)
-          .map((rule) => ({
-            href: rule.match(/\d{3}/) ? `/rules/${rule.substring(0, 3)}` : undefined,
-            title: rule,
+          .map((chapter) => ({
+            href: chapter.match(/\d{3}/) ? `/rules/${chapter.substring(0, 3)}` : undefined,
+            title: chapter,
           })),
       );
     };
