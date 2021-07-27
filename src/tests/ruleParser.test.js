@@ -1,13 +1,6 @@
+import fs from 'fs';
+import path from 'path';
 import ruleParser from '../utils/ruleParser';
-
-const fs = require('fs');
-const path = require('path');
-
-describe('Original file', () => {
-  test('table of contents has all rules', () => {
-
-  });
-});
 
 describe('Sample file 1', () => {
   const file = path.join(__dirname, './examples/', 'testrules_1.txt');
@@ -15,7 +8,6 @@ describe('Sample file 1', () => {
 
   test('has right amount of chapters and titles', async () => {
     const result = ruleParser.tableOfContentsToArray(text);
-    console.log(result);
     expect(result.length).toBe(6);
     expect(result
       .filter((line) => parseInt(line, 10) < 100)
