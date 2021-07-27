@@ -31,9 +31,9 @@ const useChaptersRules = () => {
   const [chaptersRules, setChaptersRules] = useState([]);
 
   const getRules = async () => {
-    const arr = rules || await ruleService.getRules();
-    setChaptersRules(ruleParser.chapterToArray(arr, chapter));
-    if (!rules) setRules(arr);
+    const text = rules || await ruleService.getRules();
+    setChaptersRules(ruleParser.chapterToArray(text, chapter));
+    if (!rules) setRules(text);
   };
 
   useEffect(() => {

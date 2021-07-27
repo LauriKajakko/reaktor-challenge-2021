@@ -6,8 +6,10 @@ const useSearch = (chaptersRules) => {
 
   useEffect(() => {
     const newArray = chaptersRules
-      .filter((item) => item?.toLowerCase()
-        .includes(filter.toLowerCase()));
+      ? chaptersRules
+        .filter((item) => item?.toLowerCase()
+          .includes(filter.toLowerCase()))
+      : [];
     setFilteredArray(newArray);
   }, [chaptersRules]);
 

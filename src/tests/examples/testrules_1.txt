@@ -1,0 +1,66 @@
+Title!
+
+This text has 6 chapters, 2 titles and 10 rules
+1. brrbrr
+2. :DSF 
+
+Some text followed by enumerated newlines
+
+Some spells or abilities that produce mana restrict how that mana can be spent, have an additional effect that affects the spell or ability that mana is spent on, or create a delayed triggered ability (see rule 603.7a) that triggers when that mana is spent. This doesn’t affect the mana’s type.
+Example: A player’s mana pool contains {R}{G} which can be spent only to cast creature spells. That player activates Doubling Cube’s ability, which reads “{3}, {T}: Double the amount of each type of unspent mana you have.” The player’s mana pool now has {R}{R}{G}{G} in it, {R}{G} of which can be spent on anything.
+
+Here is a random number 123 and here I want to talk about rule 104.3 and 103.2a for some reason. 
+
+Glossary
+
+Word
+
+This time there is no word Content to start the rules
+
+No nothing
+
+1. Title Number One
+
+100. aszasf
+
+100.1. aspkdfpoåk
+
+101. This Is First Subtitle
+
+101.1. This is a rule.
+
+101.2a This too is a tule.
+
+101.2b This rule is referencing some other rule. (see rule 101.1).
+
+102. brrbrr
+
+102.1. hapojkpodkpoqkdw
+
+102.2. asd
+
+2. Another Title and Some Text Formatted The Same Way to Simulate New Rules
+
+200. Subtiittel
+
+200.1. lol
+
+200.2. asdasd123123jnsmpeo0lr
+
+200.3a brrrrr. see section 2 "lol".
+
+200.10a big jump
+
+Title that is not Glossary
+
+Some stuff....
+
+
+idk more enumerated things
+1. lol
+2. lmao
+3. kojdsnkmfpl
+2. ökm
+
+
+

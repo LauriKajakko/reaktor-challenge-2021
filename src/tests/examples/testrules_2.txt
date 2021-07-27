@@ -1,0 +1,31 @@
+Here is:
+1. List of titles
+2. list of chapters
+3. rules
+
+1. title one
+2. title two
+3. title three
+
+100. chapter one
+101. chapter two
+200. chapter three
+201. chapter four
+300. chapter five
+
+1. title one
+100. chapter one
+100.1. rule one
+101. chapter two
+101.1. rule two
+2. title two
+200. chapter three
+200.1. rule three
+201. chapter four
+201.1. rule four
+3. title three
+300. chapter five
+300.1. rule five and end of file
+10. yes
+1000. wow
+1000.1. big numbers
